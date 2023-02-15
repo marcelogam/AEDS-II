@@ -1,0 +1,84 @@
+2019
+1460
+978
+809
+647
+574
+237
+466
+745
+971
+971
+943
+943
+604
+323
+59
+59
+86
+86
+46
+91
+111
+111
+78
+95
+108
+107
+5156
+5270
+5316
+5301
+5289
+5244
+164
+93
+47
+335
+340
+397
+419
+419
+495
+323
+318
+291
+270
+326
+284
+217
+217
+I 1487390
+284
+I 258520
+317
+I 1165270
+216
+I 298140
+186
+I 213610
+227
+I 50510
+231
+I 998660
+132
+I 1740720
+157
+I 24720
+312
+I 439550
+332
+I 1507410
+239
+R
+(R) Burn Zombie Burn!
+R
+(R) Sopwith VR
+R
+(R) Have a Nice Death
+R
+(R) SPORE™ Galactic Adventures
+[0] 
+439550 'n Verlore Verstand Apr/2016 50000 - 100000 0 14.99 1 [English, French, Italian, German, Spanish - Spain, Arabic, Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Japanese, Korean, Norwegian, Polish, Portuguese, Portuguese - Brazil, Romanian, Russian, Simplified Chinese, Swedish, Thai, Traditional Chinese, Turkish, Ukrainian] http://www.skobbejakgames.com true true true 40% 2h 20m Skobbejak Games,Skermunkel [Adventure, Casual, Indie]
+[1] 
+1507410 Coloring Book for Kids Mar/2021 50000 - 100000 0 0.0 1 [English, French, Italian, German, Arabic, Czech, Danish, Dutch, Hungarian, Japanese, Korean, Norwegian, Polish, Portuguese - Brazil, Romanian, Russian, Simplified Chinese, Spanish - Latin America, Swedish, Thai, Turkish, Vietnamese] null true true false 90% null Peaksel [Casual, Free to Play, Indie]

@@ -1,0 +1,38 @@
+Palindromo em C - Refaça em C a questão anterior.
+
+int tamahoString(char string[]){
+    int total=0;
+    while( string[total] != '\0'){
+        total++;
+    }
+    return total;
+}
+
++Esta funcao recebe uma string e conta o tamanho dela ate encontrar o '\0'(fim dela)
+
+
+int main(void){
+    char entrada[1000][1000]; // criando uma matriz com indice 
+    int numEntrada = 0;
+    do{
+        fgets(entrada[numEntrada],1000,stdin);
+    }while (isFIM(entrada[numEntrada++])== false);
+    
+    numEntrada--; // Descomsiderar o FIM.
+    
+    for(int i = 0; i < numEntrada; i++){
+        isPalindromo(entrada[i]);
+    }
+    return 0;
+    
+}
+
++ cria uma string com indice string[1000][1000]
+string[0]['C' 'H' 'O' 'C' 'O' 'L' 'A' 'T' 'E'];
+string[1]['O' 'V' 'O'];
+
+
+FUNCAO: "fgets(entrada[numEntrada],1000,stdin)" 
+entrada[numEntrada] = onde vai guardar a palavra
+1000 = permitir a leitua de ate 999 caracteres pq 1 e' o '\0'
+stdin = Standard Input(etrada padrao do meu compuyador que e o teclado), seriai de onde vai ler essa palvara.

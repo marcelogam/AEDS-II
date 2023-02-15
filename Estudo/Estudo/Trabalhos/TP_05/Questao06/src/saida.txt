@@ -1,0 +1,14 @@
+=> Samurai Bringer
+Posicao: 18
+=> Another Otter
+posicao: 20
+=> Chuhou Joutai 2: Paraided!
+NAO
+=> Mutant Mudds Deluxe
+posicao: 16
+=> HUNTDOWN
+posicao: 2
+=> A Detective's Novel
+NAO
+=> Solasta: Crown of the Magister
+posicao: 4

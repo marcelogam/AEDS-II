@@ -1,0 +1,40 @@
+import java.io.*;
+
+class Arquivo{
+
+	public static void converte(double num){
+		double num2 = num;
+
+		if(num % 1 == 0){
+			MyIO.println((int) num2);
+		}else {
+			MyIO.println(num2);
+		}
+	}
+
+
+	public static void main (String[] args) throws Exception{
+	
+		int n = MyIO.readInt();
+		RandomAccessFile raf = new RandomAccessFile("pub.txt","rw");
+	
+		for(int i = 0; i < n; i++){
+			raf.writeDouble(MyIO.readDouble());
+		}
+	
+
+		raf.close();
+
+		RandomAccessFile raf2 = new RandomAccessFile("pub.txt", "r");
+
+		double num = raf2.readDouble();
+
+		for(int i = n - 1; i >= 0; i--){
+			raf2.seek(i * 8);
+			converte(raf2.readDouble());
+        }
+		raf2.close();
+
+	}
+
+}

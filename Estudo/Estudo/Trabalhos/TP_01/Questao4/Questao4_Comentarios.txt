@@ -1,0 +1,52 @@
+Alteração Aleatória em Java - Crie um método iterativo que recebe uma string, sorteia
+duas letras minúsculas aleatórias (código ASCII ≥ ’a’ e ≤ ’z’), substitui todas as ocorrências da
+primeira letra na string pela segunda e retorna a string com as alterações efetuadas. Na saı́da
+padrão, para cada linha de entrada, execute o método desenvolvido nesta questão e mostre a
+string retornada como uma linha de saı́da. Abaixo, observamos um exemplo de entrada supondo
+que para a primeira linha as letras sorteados foram o ’a’ e o ’q’. Para a segunda linha, foram o
+’e’ e o ’k’.
+
+EXEMPLO DE ENTRADA:
+o rato roeu a roupa do rei de roma
+e qwe qwe qwe ewq ewq ewq
+FIM
+
+EXEMPLO DE SAÍDA:
+o rqto roeu q roupq do rei de romq
+k qwk qwk qwk kwq kwq kwq
+
+A classe Random do Java gera números (ou letras) aleatórios e o exemplo abaixo mostra uma
+letra minúscula na tela. Em especial, destacamos que: i) seed é a semente para geração de
+números aleatórios; ii) nesta questão, por causa da correção automática, a seed será quatro; iii)
+a disciplina de Estatı́stica e Probabilidade faz uma discussão sobre “aleatório”.
+
+Random gerador = new Random( ) ;
+gerador . setSeed ( 4 ) ;
+System . out . println ( ( char ) ( ’ a ’ + (Math. abs ( gerador . nextInt ( ) ) % 2 6 ) ) ) ;
+---------------------------------------------------------------------------------------------------
+
+public static String alteraAleatorio(String string, Random gerador){
+	
+	char sorteado1 = ( (char) ('a' + (Math.abs(gerador.nextInt() ) % 26 )));
+	char sorteado2 = ( (char) ('a' + (Math.abs(gerador.nextInt() ) % 26 )));
+		
+	String resp = "";
+
+	for(int i = 0; i < string.length(); i++){
+			
+		if(string.charAt(i) == sorteado1){
+			resp += sorteado2;
+		}else{
+			resp += string.charAt(i);
+		}
+	}
+
+	return resp;
+}
+
++Esta recebe 2 parametros, uma string e um Random e retorna uma string.
+Cria 2 variaveis do tipo char, que os valores dela sao escolhidos aleatoriamente.
+Cria tambem uma string que incialmente tem o seu valor vazio. No laco for 
+ele verifica se a letra da string recebida com paramentro e' igual a primeira variavel 
+escolhida aleatoriamente, se for igual ele coloca a segunda variavel escolhida aleatoriamente 
+dentro da variavel que sera construida, se nao for igual ele coloca a variavel da palavra na variavel que sera construida.

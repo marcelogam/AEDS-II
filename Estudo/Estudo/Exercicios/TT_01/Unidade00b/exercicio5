@@ -1,0 +1,2 @@
+• O que o código abaixo faz?
+R: Ele pega um valor do tipo caractere, transforma esse valor em um numero inteiro de acordo com a tabela asc e joga esse valor para dentro de uma variavel do tipo inteira e verifica se esse valor é igual a valores que ele colocou como comparação. Se for igual ele tranforma a variavel do tipo booleana que recebeu um valor falso inicialemente em um valor verdadeiro e retorna essa variavel booleana.

@@ -1,0 +1,39 @@
+Ciframento de César em Java - O Imperador Júlio César foi um dos principais nomes do
+Império Romano. Entre suas contribuições, temos um algoritmo de criptografia chamado “Cifra-
+mento de César”. Segundo os historiadores, César utilizava esse algoritmo para criptografar as
+mensagens que enviava aos seus generais durante as batalhas. A ideia básica é um simples deslo-
+camento de caracteres. Assim, por exemplo, se a chave utilizada para criptografar as mensagens
+for 3, todas as ocorrências do caractere ’a’ são substituı́das pelo caractere ’d’, as do ’b’ por ’e’,
+e assim sucessivamente. Crie um método iterativo que recebe uma string como parâmetro e
+retorna outra contendo a entrada de forma cifrada. Neste exercı́cio, suponha a chave de cifra-
+mento três. Na saı́da padrão, para cada linha de entrada, escreva uma linha com a mensagem
+criptografada.
+----------------------------------------------------------------------------------------------------
+
+public static String ciframentoDeCesar(String str){
+		String resp = "";
+
+		for(int i = 0; i < str.length(); i++){
+			resp += (char)(str.charAt(i) + 3);
+			
+		}
+
+		return resp;	
+	}
+
++Esta funcao recebe uma string e retorna uma string. inicia uma variael do tipo string vazia **String resp = ""**. Dentro do laco for vai essa varival vai sendo construida somando uma varivael do tipo char(str.charAt(i)) + 3 , por causa do ciframento De Cesar.
+
+public static void main(String[] args) throws Exception {
+        String palavra[] = new String[1000];
+		int entrada = 0;
+		do{
+		
+			palavra[entrada] = MyIO.readLine();
+			if(!isFim(palavra[entrada])){
+				MyIO.println(ciframentoDeCesar(palavra[entrada]));		
+			}
+		}while(!isFim(palavra[entrada++]));
+    }
+}
+
++ Escreve na tela do usuario a palavra nova que foi criada a partir da funcao ciframentoDeCesar().

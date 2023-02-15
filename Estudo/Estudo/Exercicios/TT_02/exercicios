@@ -1,0 +1,162 @@
+O: É o limite superior
+Ω: É o limite inferior
+©: É o limite justo
+O: (0) Ω:(0) ©:(0)  
+
+Exercicio(1)
+Constante é igual a zero.
+O: (0) Ω:(0) ©:(0)  
+a)1 d)8  g)64  j)512
+b)2 e)16 h)128 k)1024
+c)4 f)32 i)256 l)2048
+
+Exercicio(2)
+Constante é igual a zero.
+O: (0) Ω:(0) ©:(0)  
+a)11 d)8 g)5 j)2
+b)10 e)7 h)4 k)1
+c)9  f)6 i)3 l)0
+
+Exercicio(3)
+Constante é igual a zero.
+O: (0) Ω:(0) ©:(0)  
+a)5 d)4 g)4.0875 j)3.9069
+b)4 e)4 h)5      k)4
+c)5 f)4 i)4      l)3 
+
+Exercicio(5)
+Constante é igual a zero.
+O: (0) Ω:(0) ©:(0)  
+10,9,8,7 = 4 subtrações.
+
+Exercicio(6)
+Constante é igual a zero.
+O: (0) Ω:(0) ©:(0)  
+5,4,3,2 = 4 subtrações.
+
+Exercicio(7)
+0 + 2
+1 + 1
+2 + 2
+3 + 1
+ 4 + 2 = 8 subtrações.
+Constante é igual a zero.
+O: (0) Ω:(0) ©:(0)  
+
+Exercicio(8)
+O: (n^2) Ω:(n^2) ©:(n^2)  
+ n * n * 1 = n^2
+ 
+Exercicio(9)
+Constante é igual a zero.
+O: (0) Ω:(0) ©:(0)  
+1+8 = 9 subtrações.
+
+Exercicio(10)
+O: (n^2) Ω:(n^2) ©:(n^2)  
+n*(n-3) = n^2 -3n
+
+Exercicio(11)
+O: (n^2) Ω:(n^2) ©:(n^2)  
+n-7*n*1 = n^2 -7n
+
+Exercicio(12)
+lg(n), sempre que o tamanho de um problema for, sistematicamente, dividido por dois, temos um custo logaritmico.
+O: (n) Ω:(n) ©:(n)  
+
+Exercicio(13)
+O: (n) Ω:(n) ©:(n)  
+lg(n+4) 
+
+Exercicio(14)
+O: (n^2) Ω:(n^2) ©:(n^2)  
+(n-7) * (n-7) = n^2 + -12n + 49
+
+
+Exercicio(15)
+O: (n) Ω:(n) ©:(n)  
+lg(n+1)
+
+Exercicio(16)
+O: (n) Ω:(n) ©:(n)  
+lg(n-1)
+
+Exercicio(17)
+O: (n) Ω:(n) ©:(n)  
+lg(n) - 1
+
+Exercicio(18)
+O: (n) Ω:(n) ©:(n)  
+lg(n)
+
+Exercicio(19)
+
+b)
+O: (n^3) Ω:(n^3) ©:(n^3)  
+i = 0;
+while(i <n){
+  i++;
+  a--;b--;c--;d--;e--;
+}
+for(int i = 0; i < n; i++){
+  for(int j = 0; j < n; j++){
+    for(int k = 0; k < n; k++){
+      a--;b--;c--;d--;
+    }
+  }
+}
+
+c)
+O: (n) Ω:(n) ©:(n)  
+for(int i = n; i > 0; i/=2){
+  a--;
+}
+
+for(int i = 0; i < n; i++){
+  b--;
+}
+
+d)
+O: (n^3) Ω:(n^3) ©:(n^3)  
+for(int i = 0; i < n; i++){
+  for(int j = 0; j < n; j++){
+    for(int k = 0; k < n; k++){
+      a--;b--;
+    }
+  }
+}
+for(int i = 0; i < 5; i++){
+  a--;
+}
+
+e)
+O: (n^4) Ω:(n^4) ©:(n^4)  
+for(int i = 0; i < n; i++){
+  for(int j = 0; j < n; j++){
+    for(int k = 0; k < n; k++){
+      for(int l = 0; l < n; l++){
+        a--;b--;c--;d--;e--;f--;g--;h--;i--;
+      }
+    }
+  }
+}
+
+for(int i = 0; i < n; i++){
+  for(int j = 0; j < n; j++){
+    a--;b--;c--;d--;e--;
+  }
+}
+
+for(int i = 0; i < n/2; i++){
+  a--;
+}
+
+f)
+O: (n) Ω:(n) ©:(n)  
+for(int i = n; i > 0; i/=2){
+  a--;
+}
+for(int i = n; i > 0; i/=2){
+  a--;b--;c--;d--;e--;
+}
+
